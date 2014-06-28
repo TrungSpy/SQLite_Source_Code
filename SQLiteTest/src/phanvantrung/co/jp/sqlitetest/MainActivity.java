@@ -7,6 +7,11 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 
+/**
+ * @version 1.0 
+ * @author PhanVanTrung
+ *
+ */
 public class MainActivity extends Activity {
 
 	 @Override
@@ -15,16 +20,13 @@ public class MainActivity extends Activity {
 	        setContentView(R.layout.activity_main);
 	         
 	        DatabaseHandler db = new DatabaseHandler(this);
-	         
-	        /**
-	         * CRUD Operations
-	         * */
+	       
 	        // Inserting Contacts
 	        Log.d("Insert: ", "Inserting .."); 
-	        db.addContact(new Contact("Ravi", "9100000000"));        
-	        db.addContact(new Contact("Srinivas", "9199999999"));
-	        db.addContact(new Contact("Tommy", "9522222222"));
-	        db.addContact(new Contact("Karthik", "9533333333"));
+	        db.addContact(new Contact("Phan", "9100000000"));        
+	        db.addContact(new Contact("Yokota", "9199999999"));
+	        db.addContact(new Contact("John", "9522222222"));
+	        db.addContact(new Contact("Mark", "9533333333"));
 	         
 	        // Reading all contacts
 	        Log.d("Reading: ", "Reading all contacts.."); 
